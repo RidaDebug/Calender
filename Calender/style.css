@@ -1,0 +1,114 @@
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/18/17/52/calendar-1990453_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+}
+
+
+.calendar-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #000000 0%, #FFD700 50%, #808080 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff69;
+    border-bottom: 1px solid #dddddd;
+}
+
+#month-year {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+button {
+    background-color: #aeb11e;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #070402;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #dddddd;
+}
+
+.weekdays div {
+    width: 14.28%;
+    text-align: center;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.day {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff69;
+    border: 1px solid #dddddd;
+    margin: 5px;
+}
+
+.day:hover {
+    background-color: #f9f9f9;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .calendar-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .weekdays div {
+        width: 12.5%;
+    }
+
+    .day {
+        width: 12.5%;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .weekdays div {
+        width: 10%;
+    }
+
+    .day {
+        width: 10%;
+        padding: 2px;
+    }
+}
